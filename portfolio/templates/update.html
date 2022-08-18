@@ -1,0 +1,31 @@
+<h1>Update user</h1>
+
+<form action="updaterecord/{{ member.id }}" method="post">
+    {% csrf_token %}
+    First Name:<br>
+    <input name="first" value="{{ member.firstname }}">
+    <br><br>
+    Last Name:<br>
+    <input name="last" value="{{ member.lastname }}">
+    <br><br>
+    Email :<br>
+    <input name="email" value="{{ member.email }}">
+    <br><br>
+    password:<br>
+    <input name="password" value="{{ member.password }}">
+    <br><br>Address:<br>
+    <input name="address" value="{{ member.address }}">
+    <br><br>
+    Zip code:<br>
+    <input name="zip" value="{{ member.zip }}">
+    <br><br>City:<br>
+    <input name="city" value="{{ member.city }}">
+    <br><br>
+    State:<br>
+    <input name="state" value="{{ member.state }}">
+    <br><br>
+    Country:<br>
+    <input name="country" value="{{ member.country }}">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>

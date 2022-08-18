@@ -1,0 +1,33 @@
+<h1>Add user</h1>
+
+<form action="addrecord/" method="post">
+    {% csrf_token %}
+    First Name:<br>
+    <input name="first">
+    <br><br>
+    Last Name:<br>
+    <input name="last">
+    <br><br>
+    Email :<br>
+    <input name="email">
+    <br><br>
+    password:<br>
+    <input name="password">
+    <br><br>
+    Address:<br>
+    <input name="address">
+    <br><br>
+    zip code:<br>
+    <input name="zip">
+    <br><br>
+    City:<br>
+    <input name="city">
+    <br><br>
+    State:<br>
+    <input name="state">
+    <br><br>
+    Country:<br>
+    <input name="country">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>

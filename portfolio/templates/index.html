@@ -1,0 +1,23 @@
+<h1>User</h1>
+
+<table border="1">
+    {% for x in member %}
+    <tr>
+        <td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+        <td>{{ x.first_name }}</td>
+        <td>{{ x.last_name }}</td>
+        <td>{{ x.email }}</td>
+        <td>{{ x.password }}</td>
+        <td>{{ x.address }}</td>
+        <td>{{ x.zip }}</td>
+        <td>{{ x.city }}</td>
+        <td>{{ x.state }}</td>
+        <td>{{ x.country }}</td>
+        <td><a href="delete/{{ x.id }}">delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+<p>
+    <a href="add/">Add member</a>
+</p>
